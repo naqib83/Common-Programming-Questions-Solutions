@@ -1,7 +1,7 @@
 # Common-Programming-Questions-Solutions
 
 
-## Q.1 - FizzBuzz problem regarding multiple of 3 and 5
+### Q.1 - FizzBuzz problem regarding multiple of 3 and 5
 ```
 public class FizzBuzzTest{
     public static void main(String args[]){
