@@ -91,3 +91,19 @@ while(x < arr1.length && y < arr2.length && x < arr3.length){
     }
 }
 ```
+
+#### 5. Reverse an array of integers
+
+```
+int[] arr1 = {1, 5, 10, 20, 40, 80};
+int[] arr2 = new int[arr1.length];
+
+for(int i = arr1.length-1; i>=0; i--){
+    arr2[arr1.length-1-i] = arr1[i];
+}
+
+//Just printing
+for(int i = 0; i<arr1.length; i++){
+    System.out.print(arr2[i]+" ");
+}
+```
