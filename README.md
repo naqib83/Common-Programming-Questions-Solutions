@@ -112,7 +112,7 @@ for(int i = 0; i<arr1.length; i++){
 
 ```
 int[] arr1 = {1, 5, 10, 20, 40, 80};
-for(int i = 0; i<1; i++){
+for(int i = 0; i<2; i++){
     int temp = arr1[0];
     for(int j = 0; j<arr1.length-1; j++){
         arr1[j] = arr1[j+1];
@@ -127,7 +127,7 @@ for(int k = 0; k<arr1.length; k++){
 #### 7. How to rotate an array in right direction by 2
 ```
 int[] arr1 = {1, 5, 10, 20, 40, 80};
-for(int i = 0; i<1; i++){
+for(int i = 0; i<2; i++){
     int temp = arr1[arr1.length-1];
     for(int j = arr1.length-1; j>0; j--){
         arr1[j] = arr1[j-1];
