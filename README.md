@@ -107,3 +107,34 @@ for(int i = 0; i<arr1.length; i++){
     System.out.print(arr2[i]+" ");
 }
 ```
+
+#### 6. How To Rotate An Array In The Left Direction by 2
+
+```
+int[] arr1 = {1, 5, 10, 20, 40, 80};
+for(int i = 0; i<1; i++){
+    int temp = arr1[0];
+    for(int j = 0; j<arr1.length-1; j++){
+        arr1[j] = arr1[j+1];
+    }
+    arr1[arr1.length-1] = temp;
+}
+for(int k = 0; k<arr1.length; k++){
+    System.out.print(arr1[k]+" ");
+}
+```
+
+#### 7. How to rotate an array in right direction by 2
+```
+int[] arr1 = {1, 5, 10, 20, 40, 80};
+for(int i = 0; i<1; i++){
+    int temp = arr1[arr1.length-1];
+    for(int j = arr1.length-1; j>0; j--){
+        arr1[j] = arr1[j-1];
+    }
+    arr1[0] = temp;
+}
+for(int k = 0; k<arr1.length; k++){
+    System.out.print(arr1[k]+" ");
+}
+```
