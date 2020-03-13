@@ -142,6 +142,7 @@ for(int k = 0; k<arr1.length; k++){
 ```
 
 #### 7. How to rotate an array in right direction by 2
+
 ```
 int[] arr1 = {1, 5, 10, 20, 40, 80};
 for(int i = 0; i<2; i++){
@@ -153,5 +154,27 @@ for(int i = 0; i<2; i++){
 }
 for(int k = 0; k<arr1.length; k++){
     System.out.print(arr1[k]+" ");
+}
+```
+
+#### 8. How to sort an integer array without using Arrays.sort() OR (Bubble Sort)
+
+```
+int[] arr = new int[] { 6, 8, 7, 4, 312, 78, 54, 9, 12, 100, 89, 74 };
+
+for (int i = 0; i < arr.length; i++) {
+    for (int j = i + 1; j < arr.length; j++) {
+        int tmp = 0;
+        if (arr[i] > arr[j]) {
+            tmp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = tmp;
+        }
+    }
+}
+
+//Just printing
+for (int i = 0; i < arr.length; i++) {
+    System.out.print(arr[i]+" ");
 }
 ```
