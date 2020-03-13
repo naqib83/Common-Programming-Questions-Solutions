@@ -96,6 +96,23 @@ while(x < arr1.length && y < arr2.length && x < arr3.length){
 
 ```
 int[] arr1 = {1, 5, 10, 20, 40, 80};
+        
+for(int i =0; i< arr1.length/2; i++){
+    int temp = arr1[i];
+    arr1[i] = arr1[arr1.length-1-i];
+    arr1[arr1.length-1-i] = temp;
+}
+
+//displaying
+for(int k = 0; k<arr1.length; k++){
+    System.out.print(arr1[k]+" ");
+}
+```
+
+OR
+
+```
+int[] arr1 = {1, 5, 10, 20, 40, 80};
 int[] arr2 = new int[arr1.length];
 
 for(int i = arr1.length-1; i>=0; i--){
