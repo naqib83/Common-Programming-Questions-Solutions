@@ -125,7 +125,25 @@ for(int i = 0; i<arr1.length; i++){
 }
 ```
 
-#### 6. How To Rotate An Array In The Left Direction by 2
+#### 6. Reverse a string
+
+```
+String str = "grandforks";
+char[] arr1 = str.toCharArray();
+
+for(int i =0; i< arr1.length/2; i++){
+    char temp = arr1[i];
+    arr1[i] = arr1[arr1.length-1-i];
+    arr1[arr1.length-1-i] = temp;
+}
+
+//displaying
+for(int k = 0; k<arr1.length; k++){
+    System.out.print(arr1[k]);
+}
+```
+
+#### 7. How To Rotate An Array In The Left Direction by 2
 
 ```
 int[] arr1 = {1, 5, 10, 20, 40, 80};
@@ -141,7 +159,7 @@ for(int k = 0; k<arr1.length; k++){
 }
 ```
 
-#### 7. How to rotate an array in right direction by 2
+#### 8. How to rotate an array in right direction by 2
 
 ```
 int[] arr1 = {1, 5, 10, 20, 40, 80};
@@ -156,6 +174,8 @@ for(int k = 0; k<arr1.length; k++){
     System.out.print(arr1[k]+" ");
 }
 ```
+
+#### 9. Linear Search
 
 #### 10. Find an element from an array of integers using Binary Search
 
@@ -178,10 +198,7 @@ while( initial <= last){
 }
 ```
 
-#### 10. How to sort an integer array without using Arrays.sort() OR (Bubble Sort)
-
-
-#### 10. How to sort an integer array without using Arrays.sort() OR (Bubble Sort)
+#### 11. How to sort an integer array without using Arrays.sort() OR (Bubble Sort)
 
 ```
 int[] arr = new int[] { 6, 8, 7, 4, 312, 78, 54, 9, 12, 100, 89, 74 };
@@ -202,3 +219,15 @@ for (int i = 0; i < arr.length; i++) {
     System.out.print(arr[i]+" ");
 }
 ```
+
+#### Insertion Sort
+
+#### Merge Sort
+
+#### Quick Sort
+
+#### Heap Sort (Binary Heap)
+
+#### How to Find missing Number on Integer Array of 1 to 100
+
+#### How to Find duplicate Number on Integer Array of 1 to 100
