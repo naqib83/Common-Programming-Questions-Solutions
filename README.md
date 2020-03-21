@@ -157,7 +157,31 @@ for(int k = 0; k<arr1.length; k++){
 }
 ```
 
-#### 8. How to sort an integer array without using Arrays.sort() OR (Bubble Sort)
+#### 10. Find an element from an array of integers using Binary Search
+
+*The array must be sorted.
+
+```
+int[] arr = new int[] { 6, 28, 37, 44, 78, 88, 100, 110, 120, 150};
+int find = 78;
+
+int initial = 0; int last = arr.length - 1;
+while( initial <= last){
+    int mid = (initial + last)/2;
+
+    if(arr[mid] == find) {
+        System.out.println(mid);
+    }
+
+    if(arr[mid] > find) initial = mid+1;
+    else last = mid-1; 
+}
+```
+
+#### 10. How to sort an integer array without using Arrays.sort() OR (Bubble Sort)
+
+
+#### 10. How to sort an integer array without using Arrays.sort() OR (Bubble Sort)
 
 ```
 int[] arr = new int[] { 6, 8, 7, 4, 312, 78, 54, 9, 12, 100, 89, 74 };
