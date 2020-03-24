@@ -231,3 +231,50 @@ for (int i = 0; i < arr.length; i++) {
 #### How to Find missing Number on Integer Array of 1 to 100
 
 #### How to Find duplicate Number on Integer Array of 1 to 100
+
+#### HackerRank: Robot class
+
+```
+class Robot{
+    private int currentX;
+    private int currentY;
+    private int previousX;
+    private int previousY;
+
+    public Robot(){
+        currentX = 0;
+        currentY = 5;
+        previousX = previousY = 0;     
+    }
+    public Robot(int x, int y) {
+        currentX = x;
+        currentY = y;
+        previousX = previousY = 0;   
+    }
+
+    public void moveX(int dx){
+        previousX = currentX;
+        previousY = currentY; 
+        currentX = currentX + dx;
+    }
+
+    public void moveY(int dy){
+        previousX = currentX;
+        previousY = currentY; 
+        currentY = currentY + dy;
+    }
+    
+    public void printCurrentCoordinates(){
+        System.out.println("Current Position :: " + currentX + " " + currentY );
+    }
+    
+    public void printLastCoordinates(){
+        System.out.println("Previous Position :: " + previousX + " " + previousY );
+    }
+    
+    public void printLastMove(){
+        if(currentX != previousX) System.out.println("x : " + (currentX-previousX));
+        if(currentY != previousY) System.out.println("y : " + (currentY-previousY));
+    }
+}
+```
