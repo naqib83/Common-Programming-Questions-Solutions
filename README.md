@@ -220,19 +220,21 @@ for (int i = 0; i < arr.length; i++) {
 }
 ```
 
-#### Insertion Sort
+#### 12. Insertion Sort
 
-#### Merge Sort
+#### 13. Merge Sort
 
-#### Quick Sort
+#### 14. Quick Sort
 
-#### Heap Sort (Binary Heap)
+#### 15. Heap Sort (Binary Heap)
 
-#### How to Find missing Number on Integer Array of 1 to 100
+#### 16. How to Find missing Number on Integer Array of 1 to 100
 
-#### How to Find duplicate Number on Integer Array of 1 to 100
+#### 17. How to Find duplicate Number on Integer Array of 1 to 100
 
-#### HackerRank: Robot class
+#### 18. HackerRank: Robot class
+
+Question: https://www.luminpdf.com/viewer/5e7a28dec8486d001815a8a3
 
 ```
 class Robot{
