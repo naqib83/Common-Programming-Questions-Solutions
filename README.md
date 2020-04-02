@@ -177,9 +177,9 @@ for(int k = 0; k<arr1.length; k++){
 
 #### 9. Linear Search
 
-#### 10. Find an element from an array of integers using Binary Search
+#### 10. Find an element from an array of integers using Binary Search | The array must be sorted
 
-*The array must be sorted.
+*Iterative Solution
 
 ```
 int[] arr = new int[] { 6, 28, 37, 44, 78, 88, 100, 110, 120, 150};
@@ -195,6 +195,33 @@ while( initial <= last){
 
     if(arr[mid] > find) initial = mid+1;
     else last = mid-1; 
+}
+```
+
+*Recursive Solution
+
+```
+public static int binarySearchRecursive(int[] arr, int start, int end, int find){
+
+    int middle = (start + end)/2;
+
+    if(end < start){
+         return -1;
+    } 
+
+    if (arr[middle] > find){
+        return binarySearchRecursive(arr, start, middle - 1, find);
+    }
+
+    if (arr[middle] < find){
+        return binarySearchRecursive(arr, middle + 1, end, find);
+    }
+
+    if (search == arr[middle]){
+        return middle;
+    }
+    
+    return -1;
 }
 ```
 
