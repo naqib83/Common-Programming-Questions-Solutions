@@ -247,7 +247,30 @@ for (int i = 0; i < arr.length; i++) {
 }
 ```
 
-#### 12. Insertion Sort
+#### 12. How to sort an integer array without using Arrays.sort() OR (Insertion Sort)
+
+```
+  public static int[] insertionSort(int[] array){
+    int j, key;
+    
+    for(int i = 1; i < array.length; i++){
+    
+      key = array[i];
+      j = i - 1;
+      
+      while(j >= 0 && key < array[j]){
+        
+        int temp = array[j];
+        array[j] = array[j+1];
+        array[j+1] = temp;
+        
+        j--;
+        
+      }
+    }
+    return array;
+  } 
+```
 
 #### 13. Merge Sort
 
