@@ -278,11 +278,7 @@ for (int i = 0; i < arr.length; i++) {
 
 #### 15. Heap Sort (Binary Heap)
 
-#### 16. How to Find missing Number on Integer Array of 1 to 100
-
-#### 17. How to Find duplicate Number on Integer Array of 1 to 100
-
-#### 18. HackerRank: Robot class
+#### 16. HackerRank: Robot class
 
 Question: https://www.luminpdf.com/viewer/5e7a28dec8486d001815a8a3
 
