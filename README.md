@@ -217,7 +217,7 @@ public static int binarySearchRecursive(int[] arr, int start, int end, int find)
         return binarySearchRecursive(arr, middle + 1, end, find);
     }
 
-    if (search == arr[middle]){
+    if (arr[middle] == find){
         return middle;
     }
     
